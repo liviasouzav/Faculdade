@@ -1,0 +1,5 @@
+L = int(input("Digite 1° número:"))
+A = int(input("Digite 2° número:"))
+print(L*A) # Área de um retângulo
+print(2*(L+A)) # Perímetro do retângulo
+print((L**2+A**2)**(1/2)) # Hipotenusa
