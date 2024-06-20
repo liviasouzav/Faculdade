@@ -1,0 +1,5 @@
+fullname = input("Insira seu nome:")
+words = fullname.strip().split()
+transformed_words = [word.capitalize() for word in words]
+fullname = ' '.join(transformed_words)
+print(fullname)
