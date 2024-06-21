@@ -1,0 +1,11 @@
+tenho_formacao = True
+cheguei_atrasado = False
+tenho_portfolio = True
+tenho_experiencia = False
+sou_sobrinho_do_dono = False
+
+fui_contratado = (
+    (
+        tenho_formacao and not cheguei_atrasado and ( tenho_portfolio or tenho_experiencia)
+    ) or sou_sobrinho_do_dono)
+print(" Fui contratado? ", fui_contratado)
