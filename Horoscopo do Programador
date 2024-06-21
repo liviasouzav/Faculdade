@@ -1,0 +1,36 @@
+print("Bora descobrir qual seu signo de programador!!!")
+signo = str(input("Insira o mês do seu nascimento: "))
+signo = signo.lower()
+while signo != 'janeiro' and signo != 'feveiro' and signo != 'março' and signo != 'abril' and signo != 'maio' and signo != 'junho' and signo != 'julho' and signo != 'agosto' and signo != 'setembro' and signo != 'outubro' and signo != 'novembro' and signo != 'dezembro':
+    print('Você é Burro!!!')
+    import time
+    def esperar(segundos):
+        time.sleep(segundos)
+        print("Tente novamente")
+    esperar(2)
+    signo = input('Insira o mês do seu nascimento: ')
+    signo = signo.lower()
+if signo == 'janeiro':
+    print('Python')
+elif signo == 'fevereiro':
+    print('Fortran')
+elif signo == 'março':
+    print('Rust')
+elif signo == 'abril':
+    print('Go')
+elif signo == 'maio':
+    print('Java')
+elif signo == 'junho':
+    print('JavaScript')
+elif signo == 'julho':
+    print('C')
+elif signo == 'agosto':
+    print('PHP')
+elif signo == 'setembro':
+    print('Haskell')
+elif signo == 'outubro':
+    print('Perl')
+elif signo == 'novembro':
+    print('Swift')
+elif signo == 'dezembro':
+    print('Kotlin')
