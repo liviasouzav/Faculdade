@@ -1,0 +1,8 @@
+# DESAFIO 001
+# nome = input("Qual seu nome? ")
+# print("Olá, Mundo")
+# print("Sou a", nome)
+
+# DESAFIO 002
+# nome = input("Qual seu nome? ")
+# print("Meu nome é {}!".format(nome))
