@@ -1,0 +1,17 @@
+# DESAFIO 003
+# n = int(input('Número 1: '))
+# n1 = int(input('Número 2: '))
+#
+# s = n+n1
+#
+# print('Calculo dos dois números é {} + {} = {}'.format(n, n1, s))
+
+# DESAFIO 004
+sig = input('Escreva qualquer coisa: ')
+print(sig.isalnum()) # Alfanúmerico
+print(sig.isalpha()) # Alfabeto
+print(sig.islower()) # Maiúsculas
+print(sig.isspace()) # Espaço
+print(sig.isnumeric()) # Número
+print(sig.isupper()) # Minúsculas
+print(sig.istitle()) # Capitalizada
