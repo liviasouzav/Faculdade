@@ -16,3 +16,13 @@ print('Resultado:', soma2)
 #str : valores caracteres ou strings : 'Olá' , '7.5' , ''
 
 print('A soma vale {}'.format(soma0))
+
+
+# Aula 06
+n1 = int(input('Digite um valor: '))
+n2 = int(input('Digite um valor: '))
+
+s = int (n1+n2)
+
+# print('O valor do calculo de', n1, '+', n2, '=', s)
+print('A soma entre {} + {} = {}'.format(n1, n2, s)) 
