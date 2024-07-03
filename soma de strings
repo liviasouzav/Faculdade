@@ -1,0 +1,9 @@
+def soma_numeros(soma):
+    total_soma = 0
+    for x in soma:
+        if x.isnumeric():
+            print(x)
+            numeros = int(x)
+            total_soma += numeros
+    print(total_soma)
+soma_numeros('3ab6')
