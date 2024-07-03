@@ -1,0 +1,41 @@
+LETRAS_LOWER = 'abcdefghijklmnopqrstuvwxyz'
+LETRAS_UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+NUMEROS = '0123456789'
+CHAR_VALIDOS = LETRAS_LOWER + LETRAS_UPPER + NUMEROS
+
+
+def valida_trecho(v: str) -> bool:
+    if len(v) == 0:
+        return False
+    for char in v:
+        if char not in CHAR_VALIDOS:
+            return False
+    return True
+
+
+def valida_endereco(endereco: str) -> bool:
+    partes = endereco.split('.')
+
+    if len(partes) < 2 or len(partes) > 3:
+        return False
+
+    prefixo = partes[0]
+    if prefixo != '' and prefixo != 'www' and prefixo != 'intra':
+        return False
+
+    site = partes
+    if not valida_trecho(site):
+        return False
+
+    t = partes
+    if t not in ['com', 'org', 'net']:
+        return False
+
+    return True
+
+
+endereco = input("Digite o endereço do site: ")
+if valida_endereco(endereco):
+    print(f"O endereço '{endereco}' é válido.")
+else:
+    print(f"O endereço '{endereco}' não é válido.")
